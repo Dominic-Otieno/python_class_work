@@ -1,0 +1,101 @@
+#python functions
+#its a block of code that runs only when its called
+def my_function():
+    print("hello world")
+my_function()
+#another way is to write 
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+my_function("paul")
+#continuation
+def my_function(*children):
+    print("my number of", "" + 'children')
+my_function()
+#continuation
+def sum(x,y):
+    a=x+y
+    print("the sum is",a)
+sum(10,20)
+sum(501,858)
+#alternatively,
+def sum(x,y):
+    a=x+y
+    return a
+print(sum(10,20))
+#mutiplication
+def sum(x,y):
+    a=x*y
+    return a
+print(sum(10,20))
+#division
+def sum(x,y):
+    a=x//y
+    return a
+print(sum(10,20))
+#alternatively
+def quotient(x,y):
+    a=x/y
+    print("The quotient",a)
+quotient(50,10)
+#
+def sum(x,y):
+    a=x%y
+    return a
+print(sum(10,3))
+#arbitrary arguments
+def courses(*CLASS):
+    for subject in CLASS:
+        print(subject)
+courses("CPA","CISCO","OOSAD")
+#using return
+def courses(*CLASS):
+    for subject in CLASS:
+        return subject
+print(courses("CPA","CISCO","OOSAD"))
+#using keywards
+def courses(**take):
+    for key,value in take.items():
+        print("{}:{}".format(key,value))
+
+courses(first='CPA',second='CISCO',third='OOSAD')
+#default parameter value
+def Nigeria(city = "lagos"):
+    print("i am from " + city)
+
+Nigeria()
+Nigeria("Solai")
+Nigeria("Kinshasha")
+Nigeria("Kigali")
+#passing a list as an arguments
+def my_function(units):
+    for y in units:
+        print(y)
+units = ["multimedia", "oosad","professional ethics","python programming"]
+my_function(units)
+#passing a dictionary as an argument
+def my_function(students):
+    for x in students:
+        print(x)
+students={"name":"paul",
+"reg no":"bscit",
+"sem":"2"}
+my_function(students)
+#program to calculate area of a circle
+def area_of_circle():
+    pi = 3.142
+    r = float(input("enter the radius"))
+    area = (pi*r*r)
+    print('the area is' + str(area))
+area_of_circle()
+#area of a cyrinder
+def area_of_a_cylinder():
+    pi = 3.142
+    r = int(input("enter the radius" + " "))
+    h = int(input("enter the height" + " "))
+    area = (pi*r*h)
+    print("The area is" + str(area))
+area_of_a_cylinder()

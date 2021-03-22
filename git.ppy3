@@ -1,0 +1,56 @@
+patient = {
+"name":"paul",
+"email":"pmwas8294@gmail.com",
+"phone":"not applicable",
+"diagnosis":"unsatisfaction"
+};
+print("patient")
+if "email" in patient:
+    print("yes, inbox them and send an email informing them of the next visit")
+else:
+    print("no, email not found")
+#x=patient("diagnosis")
+#print(x)
+
+
+#using dictionary loops in python
+fruits = ["banana", "mangoes", "apple", "cherry"]
+for x in fruits:
+    print(x)
+if "banana" in fruits:
+    print("yes, order some.")
+else:
+    print("NO, try again next time.")
+if "cucumber" in fruits:
+    print("yes, order some.")
+else:
+    print("NO, try again next time.")
+    
+#nested dictionaries
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+print(myfamily)
+
+#methods
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get("model"))
+print(car.get("brand"))
+car.clear()
+
